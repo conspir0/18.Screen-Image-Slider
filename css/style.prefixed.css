@@ -8,6 +8,7 @@ body,
   height: 100vh;
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 .wrap {
@@ -64,15 +65,32 @@ body,
 
 #arrow-left {
   border-width: 30px 40px 30px 0;
-  border-color: transparent #000 transparent transparent;
+  border-color: transparent #fff transparent transparent;
   left: 0;
   margin-left: 30px;
 }
 
 #arrow-right {
   border-width: 30px 0 30px 40px;
-  border-color: transparent transparent transparent #000;
+  border-color: transparent transparent transparent #fff;
   right: 0;
   margin-right: 30px;
+}
+
+@media (max-width: 750px) {
+  .slide-content .slide-text {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .arrow {
+    top: 50%;
+    margin-top: -16px;
+  }
+  #arrow-left {
+    border-width: 15px 20px 15px 0;
+  }
+  #arrow-right {
+    border-width: 15px 0 15px 20px;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
